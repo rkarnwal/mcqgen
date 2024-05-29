@@ -24,6 +24,8 @@ git clone https://github.com/rkarnwal/mcqgen
 
 Now create .env file as it is not in git and add openAI key
 in ubuntu pip doesn't work you need to use pip3 and install requirement.txt to set environmeny
+Create env as it is not checked in Git using command  python3 -m venv /home/ubuntu/mcqgen/
+activate env using    source /home/ubuntu/mcqgen/bin/activate
 pip3 install -r requirement.txt
 
 run app in aws using python3 -m streamlit run StreamlitApp.py
