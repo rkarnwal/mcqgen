@@ -27,5 +27,5 @@ in ubuntu pip doesn't work you need to use pip3 and install requirement.txt to s
 Create env as it is not checked in Git using command  python3 -m venv /home/ubuntu/mcqgen/
 activate env using    source /home/ubuntu/mcqgen/bin/activate
 pip3 install -r requirement.txt
-
+Modify the security group of the instance  and new inbound rule to allow port 8501 by adding new rule : Type Custom TCP Port Range 8501 source 0.0.0.0
 run app in aws using python3 -m streamlit run StreamlitApp.py
