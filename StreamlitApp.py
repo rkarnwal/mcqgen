@@ -11,7 +11,17 @@ from src.mcqgenerator.logger import logging
 
 
 #loading json file
-with open(r'C:\Users\rajat\ailearning\mcqgen\Response.json', 'r') as file:
+#with open(r'C:\Users\rajat\ailearning\mcqgen\Response.json', 'r') as file:
+#   RESPONSE_JSON = json.load(file)
+
+# Get the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the relative path to the Response.json file
+response_json_path = os.path.join(script_dir, 'Response.json')
+
+# Open the Response.json file using the relative path
+with open(response_json_path, 'r') as file:
     RESPONSE_JSON = json.load(file)
 
 st.title("MCQs Creator Application with LangChain")
